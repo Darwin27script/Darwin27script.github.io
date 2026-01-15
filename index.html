@@ -1,98 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio • Desarrollador</title>
-    <link rel="stylesheet" href="main-styles.css">
-
-    <!-- sources font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    
-    <!-- Atribuciones -->
-    <!-- https://www.flaticon.com/free-icons/linkedin - LinkedIn icons created by riajulislam -->
-    <!-- https://www.flaticon.com/free-icons/github - GitHub icons created by riajulislam -->
-    <!-- https://www.flaticon.com/free-icons/telegram - Telegram icons created by Pixel perfect -->
-    <!-- End Atribuciones -->
-    
-
-</head>
-
-<body>
-
-    <header class="hero">
-        <nav class="nav">
-            <div class="logo">darwinscript</div>
-            <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
-            <h1>Web Developer</h1>
-            <p class="subtitle">Minimalism, precision and style in every line of code.</p>
-            <a href="#projects" class="btn">MY PROJECTS</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="media/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EthelWulf</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lion AI</h1>
     </header>
-
-    <section id="about">
-        <h2>About me</h2>
-        <p>
-            I'm a web developer specializing in creating clean, modern, and functional digital experiences. I'm
-            passionate about minimalist design and combining it with elegant technical solutions. I've honed my skills
-            in HTML, CSS, and JavaScript. I love developing in Python and Django. My goal is to create websites that
-            not only look great but also deliver an exceptional user experience.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyectos destacados</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto.</p>
-            </div>
+    <main>
+      <section>
+        <div>
+          <h2 style="color: #ffcc00">Asistente de IA</h2>
+          <img src="media/Modelo.jpg" alt="" width="400px" />
+          <a
+            href="https://www.canva.com/design/DAG-TSeVxFU/EmoXK9Vk-0GZIVu5WE_Kmw/edit"
+            >Más sobre nuestro producto</a
+          >
         </div>
-    </section>
+        <div>
+          <h2>Desarrollo de Software a Medida</h2>
+          <p>
+            Creamos soluciones de software personalizadas que se adaptan
+            perfectamente a las necesidades únicas de tu negocio, optimizando
+            procesos y mejorando la eficiencia operativa.
+          </p>
 
-    <footer id="contact">
-        <h2>Contacto</h2>
-        <p class="email"><strong>andino391noe@gmail.com</strong></p>
-        <ul class="social-links">
-            <li>
-                <strong>
-                    <a href="https://www.linkedin.com/in/darwinscript/" target="_blank">
-                        <img src="media/linkedin-icon.png" alt="LinkedIn">
-                    </a>
-                </strong>
-            </li>
-            <li>
-                <strong>
-                    <a href="https://github.com/Darwin27script" target="_blank">
-                        <img src="media/github-icon.png" alt="GitHub">
-                    </a>
-                </strong>
-            </li>
-            <li>
-                <strong>
-                    <a href="https://t.me/darwinscript" target="_blank">
-                        <img src="media/telegram-icon.png" alt="Telegram">
-                    </a>
-                </strong>
-            </li>
-        </ul>
-    </footer>
+          <form action="/action_page.php">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre.."
+            />
 
-</body>
+            <label for="correo">Correo de Contacto</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="Tu correo electrónico.."
+            />
 
+            <label for="tipo">Empresa/Particular</label>
+            <select id="tipo" name="tipo">
+              <option value="empresa">Empresa</option>
+              <option value="particular">Particular</option>
+            </select>
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
